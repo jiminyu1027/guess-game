@@ -1,0 +1,76 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Poor Story", cursive;
+  background-image: url(./images/배경.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  border: 8px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(247, 243, 242, 0.7);
+}
+.main-title {
+  font-size: 4vw;
+  font-weight: bold;
+}
+.sub-title {
+  font-size: 1.5vw;
+}
+#image-area {
+  width: 30vw;
+  border: 2px solid gray;
+}
+.content {
+  font-size: 1.2vw;
+}
+#user-num {
+  font-size: 2vw;
+  text-align: center;
+  border: 1px solid black;
+}
+#go-button {
+  width: 80px;
+  height: 60px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+#reset-button {
+  width: 90px;
+  height: 60px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  background-color: rgb(55, 68, 248);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .main-title {
+    font-size: 10vw;
+  }
+  .sub-title {
+    font-size: 4vw;
+  }
+  #image-area {
+    width: 40vw;
+  }
+  .content {
+    font-size: 3.2vw;
+  }
+  #user-num {
+    font-size: 3.7vw;
+    margin-right: 0px;
+  }
+}
