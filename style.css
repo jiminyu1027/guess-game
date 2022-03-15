@@ -17,7 +17,7 @@ body {
   background-color: rgba(247, 243, 242, 0.7);
 }
 .main-title {
-  font-size: 4vw;
+  font-size: 3.8vw;
   font-weight: bold;
 }
 .sub-title {
@@ -28,7 +28,7 @@ body {
   border: 2px solid gray;
 }
 .content {
-  font-size: 1.2vw;
+  font-size: 1.4vw;
 }
 #user-num {
   font-size: 2vw;
@@ -60,6 +60,10 @@ body {
   color: white;
   font-weight: bold;
   border: none;
+}
+.btn-box{
+display: flex;
+justify-content: center;
 }
 
 @media screen and (max-width: 48rem) {

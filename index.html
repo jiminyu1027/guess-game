@@ -22,7 +22,7 @@
   <body>
     <div>
       <div class="container py-3 mt-5 mb-3">
-        <h1 class="main-title">숫자 맞추기 게임</h1>
+        <h1 class="main-title col-12">숫자 맞추기 게임</h1>
         <h2 class="sub-title">UP &amp; DOWN</h2>
         <h3 class="sub-title">못맞추면 소원들어주기~⭐</h3>
         <div><img src="./images/start.gif" id="image-area" /></div>
@@ -36,11 +36,15 @@
               placeholder="1~100 사이 숫자를 입력하세요"
             />
           </div>
-          <div><button id="go-button" class="mt-2">Go!!</button></div>
+          <div class="btn-box mt-2">
+            <div>
+                <button id="go-button" class="mx-2">Go!!</button>
+            </div>
+            <div>
+                <button id="reset-button" class="mx-2">Reset!</button>
+            </div>
         </div>
-      </div>
-      <div class="text-center">
-        <button id="reset-button" class="text-center">Reset!</button>
+        </div>
       </div>
     </div>
 
