@@ -25,13 +25,13 @@ function play() {
 
   if (1 > userValue || 100 < userValue) {
     resultArea.textContent = "1~100사이의 숫자를 입력해주세요.";
-    imageArea.src = "./images/what.gif"
+    imageArea.src = "./images/what.gif";
     return;
   }
 
   if (history.includes(userValue)) {
     resultArea.textContent = "이미 입력한 값이에요. 다른 값을 입력해주세요.";
-    imageArea.src = "./images/what.gif"
+    imageArea.src = "./images/what.gif";
     return;
   }
 
@@ -56,9 +56,9 @@ function play() {
 
   if (chances < 1) {
     gameOver = true;
-    if(chances < 1 && userValue != randomNum ){
-        imageArea.src = "./images/lose.gif"
-        resultArea.textContent = `게임 오버ㅜㅜ 정답은 ${randomNum} 입니다. `
+    if (chances < 1 && userValue != randomNum) {
+      imageArea.src = "./images/lose.gif";
+      resultArea.textContent = `게임 오버ㅜㅜ 정답은 ${randomNum} 입니다. `;
     }
   }
 
@@ -76,7 +76,7 @@ function reset() {
   history = [];
   gameOver = false;
   goButton.disabled = false;
-  imageArea.src="./images/start.gif"
+  imageArea.src = "./images/start.gif";
 }
 
 computerNum();
