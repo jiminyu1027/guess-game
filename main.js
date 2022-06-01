@@ -15,20 +15,25 @@ userNum.addEventListener("focus", function () {
   userNum.value = "";
 });
 
+//랜덤한 값을 뽑아내는 함수
 function computerNum() {
   randomNum = Math.floor(Math.random() * 100) + 1;
   console.log(`정답 : ${randomNum}`);
 }
 
+//시작 버튼을 눌렀을때 실행되는 함수
 function play() {
   let userValue = userNum.value;
 
+  //유저가 1보다 작거나 100보다 큰 수를 입력하였을때
+  //1과 100사이의 숫자만 입력하라는 알림
   if (1 > userValue || 100 < userValue) {
     resultArea.textContent = "1~100사이의 숫자를 입력해주세요.";
     imageArea.src = "./images/what.gif";
     return;
   }
 
+  //유저가 이미 입력한 값을 다시 입력했을경우 나타나는 알림
   if (history.includes(userValue)) {
     resultArea.textContent = "이미 입력한 값이에요. 다른 값을 입력해주세요.";
     imageArea.src = "./images/what.gif";
@@ -54,6 +59,7 @@ function play() {
   history.push(userValue);
   console.log(history);
 
+  //유저가 답을 맞추지 못하였을 경우 게임이 종료됨
   if (chances < 1) {
     gameOver = true;
     if (chances < 1 && userValue != randomNum) {
@@ -67,6 +73,8 @@ function play() {
   }
 }
 
+//사용자가 reset버튼을 눌렀을때 실행되는 함수
+//모든 값이 초기화가 된다.
 function reset() {
   userNum.value = "";
   computerNum();
