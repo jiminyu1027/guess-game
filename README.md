@@ -2,6 +2,8 @@
 
 자바스크립트를 이용한 1 ~ 100 까지 랜덤한 값 하나를 맞추는 게임.
 
+![001](https://user-images.githubusercontent.com/92264611/171679393-d969d34b-7691-457c-8b4a-101054329fd7.jpg)
+
 - Demo : [https://numberguess-jimin.netlify.app/](https://numberguess-jimin.netlify.app/)
 
 ## 개발 목표
